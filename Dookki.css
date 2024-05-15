@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    cursor: pointer;
+    
+}
+
+#wrapper {
+    position: relative; /* Change to relative positioning */
+    padding-top: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+
+}
+@media only screen and (max-width:1024px) {
+
+    /* For mobile phones: */
+  
+    .wrapper .header .footer .product .banner {
+  
+      width:100%;
+  
+    }
+  
+  }
+#header {
+    width: 100%;
+    padding:0px 25px;
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    color:#6e6e6e; 
+}
+
+.logo{
+    color: #6e6e6e;
+    background: rgba(255, 255, 255, 0.466);
+    font-size: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu .item {
+    margin:0px 25px;
+}
+
+#menu .item a {
+    color: #6e6e6e;
+    background: rgba(255, 255, 255, 0.466);
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 12px 12px 5px 12px;
+    width: 80px;
+    height: auto;
+    font-style: italic;
+    transition: width 0.3s ease;
+}
+#menu .item a:hover{
+    background: rgb(63, 63, 63);
+    transition: 1s;
+}
+
+ .dropdown-content {
+    display: none;
+    position: absolute;
+}
+.item:hover .dropdown-content {
+    display: block;
+}
+
+
+
+#actions {
+    display: flex;
+    margin-left:22px;
+}
+
+.input {
+    color: #6e6e6e;
+    background: rgba(255, 255, 255, 0.466);
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    width: 68px;
+    transition: width 0.3s ease;
+    }
+.input::placeholder {
+    color: #6e6e6e;
+}
+.btn {
+    margin-left:22px;
+    color: #6e6e6e;
+    width: 40px
+    padding: 13px 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    background: rgba(255, 255, 255, 0.466);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+}
+.btn:hover{
+    background: rgb(63, 63, 63);
+    transition: 1s;
+}
+.btn1 {
+    margin-left:22px;
+    color: #6e6e6e;
+    width: 40px;
+    padding: 13px 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    background: rgba(255, 255, 255, 0.466);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+}
+.btn1:hover{
+    background: rgb(63, 63, 63);
+    transition: 1s;
+}
+#actions {
+    position: relative;
+    display: flex;
+}
+
+#suggestions {
+    color: gray;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background: #f0f0f0;
+}
+#banner{
+    width: 100%;
+    margin-top: 50px;
+    height: 600px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(45deg, rgba(39, 41, 42, 0.7) 80%,rgba(37, 38, 38, 0.7)), url('BackgroundDookki.png');
+    background-size: cover;
+    padding: 0px 133px;
+    position: relative;
+    display: flex;
+    overflow: auto;
+}
+#banner .box-left, #banner .box-right{
+    width:50%;
+}
+
+#banner .box-left{
+    z-index: 1;
+    margin-left: 40px;
+    display:block;
+}
+#banner .box-left h2{
+    font-size: 40px;
+    color: #fff;
+    margin-top: 100px;
+}
+#banner .box-left p{
+    font-size: 20px;
+    margin-top: -90px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#banner .box-left button{
+    width: 191px;
+    height: 40px;
+    margin-top: 41px;
+    background: #5a5a5a;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.4s;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#banner .box-left button:hover{
+    background: #fff;
+    color: #111;
+}
+#banner .box-right{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15vh;
+}
+#banner .box-right img{
+    width: 100%;
+    margin-right: 15px;
+    border-radius: 20px;
+    float: right;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(11, 11, 11, 0.705);
+    animation: animation 5s infinite linear;
+}
+#banner .box-right img:nth-child(1)
+{
+    animation-delay: 1s;
+    width: 30%;
+    height: 45vh;
+}
+#banner .box-right img:nth-child(2)
+{
+    animation-delay: 1.2s;
+    width: 40%;
+    height: 60vh;
+}
+#banner .box-right img:nth-child(3)
+{
+    animation-delay: 1s;
+    width: 30%;
+    height: 45vh;
+}
+@keyframes animation
+{
+    0%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+#product{
+    position: relative; 
+    width: 100%;
+    right: 0;
+    height: 100%;
+    padding-left: 170px;
+    padding-top: 50px;
+    bottom: 76px;
+    background-color: rgb(200, 186, 164);
+}
+#product .prgeneral{
+    display: flex;
+    overflow: hidden;
+    border-radius: 50px;
+    width: 300px;
+    height: 450px;
+    box-shadow: 0 0 30px rgba(11, 11, 11, 0.705);
+}
+#product .prgeneral img{
+    -webkit-animation: PrGneral linear 15s infinite;
+    width: 100%;
+}
+@-webkit-keyframes PrGneral
+{
+    from{
+        transform: translateX(0%);
+    }to{
+        transform: translateX(-200%);
+    }
+}
+#product .if{
+    text-align: center;
+    font-family:fantasy;
+    padding-left: 400px;
+    margin-top: -420px;
+    margin-bottom: 400px;
+}
+#product .if h1{
+    font-size: 45px;
+    font-weight: lighter;
+    font-family: Cormorant Upright;
+}
+#product .if p{
+    font-size: 20px;
+    padding-left: 10px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#product .ifdetail h1{
+    text-align: center;
+    margin-top: -200px;
+    margin-bottom: -20px;
+    font-size: 45px;
+    font-weight: lighter;
+    font-family: Cormorant Upright;
+}
+#product .prdetail{
+    width: 100%;
+    justify-content: center;
+    left: 0;
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    border-radius: 25px;
+    transition: 0.5s;
+    cursor: pointer;
+    padding-bottom: 40px;
+    overflow: visible;
+}
+#product .prdetail img{
+    margin-right: 4%; /* Điều chỉnh khoảng cách giữa các ảnh */
+    width: 30%; /* Điều chỉnh kích thước của các ảnh */
+    height: auto; /* Đảm bảo tỉ lệ khung hình không bị thay đổi */
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 25px;
+    background-color: aquamarine;
+}
+.prdetail:hover img{
+    transform: scale(1.1);
+}
+
+#footer {
+    min-width: 100%;
+    background: rgba(0,0,0,0.79);
+    padding: 20px 0;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#footer .box {
+    padding-left: 20px;
+}
+
+#footer .box2 {
+    padding-right: 20px;
+}
+
+#footer .box2 .quick-menu, .item a {
+    padding-left: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+.logo1 {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(255, 252, 252, 0.2);
+}

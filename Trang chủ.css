@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+#wrapper {
+    padding-top: 10px;
+    max-width: 100%;
+    background-image: url("kt5.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 125vh;
+
+}
+@media only screen and (max-width:620px) {
+
+    /* For mobile phones: */
+  
+    .wrapper .header .footer .banner{
+  
+      width:100%;
+  
+    }
+  
+  }
+#header {
+    width: 100%;
+    padding:0px 25px;
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    color:#ffffff; 
+}
+
+.logo{
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.466);
+    font-size: 20px;
+    padding: 10px 40px 10px 40px;
+    margin-right: 200px;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu .item {
+    margin:0px 25px;
+}
+
+#menu .item a {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.466);
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 12px 12px 0px 12px;
+    width: 80px;
+    height: auto;
+    font-style: italic;
+    transition: width 0.3s ease;
+}
+#menu .item a:hover{
+    background: rgb(63, 63, 63);
+    transition: 1s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+.item:hover .dropdown-content {
+    display: block;
+}
+
+#actions {
+    display: flex;
+    margin-left:22px;
+}
+#search-box{
+    background:#fff;
+    border-radius: 30px; 
+    /* position: absolute;
+    float: right;
+    width: 25%; */
+}
+#search-box #search-text{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    width: 350px;
+    padding: 10px 0 10px 15px;
+    transition: all 0.25s ease-in-out;
+}
+#search-box #search-btn{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 15px 15px;
+    font-size: 18px;
+}
+ul{
+    list-style: none;
+}
+.list{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    color: black;
+}
+.list-items {
+    padding: 10px 5px;
+}
+.list-items:hover {
+    background-color: #ddd;
+    border-radius: 0px 0 20px 20px;
+}
+
+#banner {
+    max-width: 100%;
+    height: 800px;
+    margin-top:6px;
+    display: flex;
+    padding:0px 133px;
+    position:relative;
+}
+
+#banner .box-left{
+    width: 60%;
+    position: absolute;
+}
+
+#banner  .box-left h2 {
+    font-size:48px;
+    margin-top:200px;
+    color:#fff;
+    font-style: italic;
+}
+
+#banner .box-left p {
+    color:#fff7f7;
+    font-style: italic;
+}
+@keyframes animation {
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+#footer {
+    transform: translateY(-9px);
+    position: relative;
+    width: 100%;
+    background:rgb(0,0,0,0.79);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    margin-top:0px;
+    padding:0px 50px;
+    padding-top:20px;
+    display: block;
+    justify-content: space-around;
+}
+
+#footer .box a{
+    width: 165px;
+}
+
+#footer .box .quick-menu {
+    margin-top:10px;
+}
+
+
+#footer .box .quick-menu .item{
+    margin-bottom:12px;
+}
+#footer .box .quick-menu ,.item a{
+    color:#fff;
+    text-decoration: none;
+    padding-bottom: 15px;
+}
+
+.logo1{
+    float: right;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(185, 185, 185, 0.705);
+}
