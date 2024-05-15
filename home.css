@@ -87,9 +87,7 @@
 .input::placeholder {
     color: rgb(255, 255, 255);
 }
-button{
-    color: #ddd;
-}
+
 .btn {
     margin-left: 22px;
     color: rgb(255, 255, 255);
@@ -98,7 +96,7 @@ button{
     cursor: pointer;
     border-radius: 100px;
     border: none;
-    background: rgba(255, 255, 255, 0.938);
+    background: rgba(255, 255, 255, 0.466);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     top: 0;
     left: 0;
