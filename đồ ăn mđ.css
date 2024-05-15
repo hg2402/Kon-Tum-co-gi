@@ -101,7 +101,7 @@
 .btn1 {
     margin-left: 22px;
     color: #6e6e6e;
-    width: 35px;
+    width: 40px;
     padding: 13px 10px;
     cursor: pointer;
     border-radius: 100px;
@@ -191,7 +191,7 @@ h3::after {
 }
 
 .Quan h2 {
-    font-family: cursive;
+    font-family: script;
 }
 
 .Quan p {
