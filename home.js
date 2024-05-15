@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'cafe de măng đen, măng đen': 'CafeDeMangDen.html',
         'nhà thờ gỗ, kon tum': 'NhaThoGo.html',
         'eva cafe, măng đen': 'Eva.html',
-        'de vivre cafe, măng đen': 'Devivre.html',
+        'de vivre cafe, măng đen': 'DeVivre.html',
         'xám cafe, kon tum': 'Xam.html',
         'bonne cafe, kon tum': 'Bonne.html',
         'the dé, kon tum': 'TheDe.html',
