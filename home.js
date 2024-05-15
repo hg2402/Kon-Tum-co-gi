@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchInput');
     const suggestionsBox = document.getElementById('suggestions');
 
-    // Từ điển ánh xạ từ từ khóa tìm kiếm đến các trang đích
     const searchMappings = {
         'cafe de măng đen, măng đen': 'CafeDeMangDen.html',
         'nhà thờ gỗ, kon tum': 'NhaThoGo.html',
@@ -21,16 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
         'the pad thái, kon tum': 'padthai.html',
         'mì cay kitachi, kon tum': 'Kitachi.html',
         'dookki, kon tum': 'Dookki.html',
-        // Thêm các từ khóa và trang đích khác tại đây
     };
 
-    // Chuyển đổi từ điển thành mảng để tìm kiếm
     const searchKeys = Object.keys(searchMappings);
 
-    // Hàm hiển thị gợi ý
     function showSuggestions(value) {
         const inputValue = value.trim().toLowerCase();
-        suggestionsBox.innerHTML = ''; // Xóa các gợi ý cũ
+        suggestionsBox.innerHTML = ''; 
         if (inputValue) {
             const filteredKeys = searchKeys.filter(key => key.toLowerCase().includes(inputValue));
             filteredKeys.forEach(key => {
@@ -47,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             suggestionsBox.style.display = filteredKeys.length > 0 ? 'block' : 'none';
         } else {
-            // Hiển thị tất cả gợi ý khi không có giá trị nhập vào
             searchKeys.forEach(key => {
                 const div = document.createElement('div');
                 div.classList.add('suggestion-item');
@@ -64,14 +59,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Xử lý sự kiện nhập vào ô tìm kiếm
     searchInput.addEventListener('input', function() {
         showSuggestions(this.value);
     });
 
-    // Xử lý form submit
     searchForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Ngăn chặn form submit mặc định
+        event.preventDefault(); 
         const query = searchInput.value.trim().toLowerCase();
         if (searchMappings[query]) {
             window.location.href = searchMappings[query];
@@ -80,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Ẩn gợi ý khi nhấp ra ngoài
     document.addEventListener('click', function(event) {
         if (!searchForm.contains(event.target)) {
             suggestionsBox.innerHTML = '';
