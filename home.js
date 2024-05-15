@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             suggestionsBox.style.display = filteredKeys.length > 0 ? 'block' : 'none';
         } else {
+            
             searchKeys.forEach(key => {
                 const div = document.createElement('div');
                 div.classList.add('suggestion-item');
@@ -59,9 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+
     searchInput.addEventListener('input', function() {
         showSuggestions(this.value);
     });
+
 
     searchForm.addEventListener('submit', function(event) {
         event.preventDefault(); 
@@ -72,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Không tìm thấy kết quả phù hợp.');
         }
     });
+
 
     document.addEventListener('click', function(event) {
         if (!searchForm.contains(event.target)) {
