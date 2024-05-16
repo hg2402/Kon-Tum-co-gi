@@ -111,6 +111,7 @@ body {
 
 #actions {
     display: flex;
+    margin-right: -100px;
 }
 
 .input {
