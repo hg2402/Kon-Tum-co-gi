@@ -18,6 +18,7 @@
     justify-content: space-between;
     align-items: center;
     color: #ffffff;
+    border-bottom: 0.1px solid rgb(239, 237, 237);
 }
 
 .logo {
@@ -78,8 +79,8 @@
     border-radius: 100px;
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 5px 10px;
-    width: 68px;
+    padding: 16px 22px;
+    width: 90px;
     transition: width 0.3s ease;
 }
 
@@ -88,7 +89,7 @@
 }
 
 .btn {
-    margin-left: 22px;
+    
     color: #6e6e6e;
     width: 80px;
     padding: 13px 10px;
@@ -97,7 +98,7 @@
     border: none;
     background: rgba(255, 255, 255, 0.466);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    top: 0;
+    margin-top: 20px;
     left: 0;
 }
 .btn1 {
@@ -178,7 +179,8 @@ h3::after {
     text-align: center;
     display: block;
     height: 0.1px;
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
     position: absolute;
 }
 
@@ -202,7 +204,7 @@ h3::after {
 }
 
 .Quan h2 {
-    font-family: cursive;
+    font-family: script;
 }
 
 .Quan p {
