@@ -18,6 +18,7 @@
     justify-content: space-between;
     align-items: center;
     color: #ffffff;
+    border-bottom: 0.1px solid rgb(239, 237, 237);
 }
 
 .logo {
@@ -81,6 +82,7 @@
     padding: 16px 22px;
     width: 90px;
     transition: width 0.3s ease;
+
 }
 
 .input::placeholder {
@@ -88,7 +90,7 @@
 }
 
 .btn {
-    margin-left: 22px;
+    margin-left: 0;
     color: #6e6e6e;
     width: 80px;
     padding: 13px 10px;
@@ -97,7 +99,7 @@
     border: none;
     background: rgba(255, 255, 255, 0.466);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    top: 0;
+    margin-top: 20px;
     left: 0;
 }
 .btn1 {
@@ -157,7 +159,7 @@ h3 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     padding-top: 50px;
-    font-size: 100px;
+    font-size: 30px;
     position: relative;
     text-align: center;
 }
@@ -169,7 +171,8 @@ h3::after {
     text-align: center;
     display: block;
     height: 0.1px;
-    width: 100%;
+    margin-left: 26%;
+    width: 580px;
     position: absolute;
 }
 
@@ -244,7 +247,7 @@ h3::after {
     text-decoration: none;
 }
 
-h3 {
+h4 {
     font-weight: bold;
     font-size: 20px;
     position: relative;
