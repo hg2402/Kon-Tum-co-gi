@@ -101,8 +101,8 @@
     border-radius: 100px;
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 5px 10px;
-    width: 68px;
+    padding: 16px 22px;
+    width: 90px;
     transition: width 0.3s ease;
     }
 .input::placeholder {
@@ -239,6 +239,8 @@
 #banner .box-right img:nth-child(1)
 {
     animation-delay: 1s;
+    width: 30%;
+    height: 45vh;
 
 }
 #banner .box-right img:nth-child(2)
@@ -270,9 +272,9 @@
     width: 100%;
     right: 0;
     height: 100%;
-    padding-left: 170px;
+    padding-left: 50px;
     padding-top: 50px;
-    bottom: 76px;
+    bottom: 0px;
     background-color: rgb(200, 186, 164);
 }
 #product .prgeneral{
@@ -286,6 +288,9 @@
 #product .prgeneral img{
     -webkit-animation: PrGneral linear 15s infinite;
     width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
 }
 @-webkit-keyframes PrGneral
 {
@@ -348,45 +353,58 @@
 }
 
 #footer {
-    min-width: 100%;
-    background: rgba(0,0,0,0.79);
-    padding: 20px 0;
-    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.79);
+    padding-top: 65px;
+    padding-bottom: 20px; /* Thêm padding-bottom để đảm bảo nội dung không bị cắt */
     color: #fff;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; /* Đảm bảo các phần tử con không bị tràn ra ngoài */
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: flex-start; /* Căn các phần tử con lên phía trên */
+    box-sizing: border-box;
 }
 
-#footer .box {
-    padding-left: 20px;
+#footer .box, #footer .box2 {
+    flex: 1 1 200px; /* Đảm bảo các box có chiều rộng tối thiểu và có thể co giãn */
+    padding: 10px; /* Thêm padding cho mỗi box để có khoảng cách nội dung */
 }
 
 #footer .box2 {
-    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa nội dung bên trong box2 */
+    position: static; /* Xóa position absolute để tránh các vấn đề hiển thị khi zoom */
+    padding-left: 0; /* Đặt lại padding để tránh đẩy nội dung ra ngoài */
+    margin-top: 0; /* Đặt lại margin-top */
 }
 
 #footer .box2 .quick-menu, .item a {
-    padding-left: 20px;
     color: #fff;
     text-decoration: none;
+    margin: 10px 0; /* Thêm khoảng cách giữa các mục menu */
 }
 
 h4 {
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-size: 20px;
-    position: relative;
+    margin: 20px 0; /* Thêm khoảng cách trên và dưới cho h4 */
+    font-size: 30px;
+    text-align: center; /* Căn giữa văn bản */
 }
+
 .logo1 {
     color: #ffffff;
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     cursor: pointer;
     font-style: italic;
     font-weight: 500;
     text-decoration: none;
     border-radius: 100px;
-    box-shadow: 0 0 10px rgba(255, 252, 252, 0.2);
+    box-shadow: 0 0 10px rgba(185, 185, 185, 0.705);
+    display: inline-block; /* Đảm bảo logo là inline-block để không bị cắt */
+    margin: 10px 50px; /* Thêm khoảng cách trên và dưới cho logo */
 }
