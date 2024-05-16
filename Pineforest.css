@@ -132,12 +132,12 @@ body {
     color: #6e6e6e;
 }
 
-.btn1:hover {
+.btn:hover {
     background: rgb(63, 63, 63);
     transition: 1s;
 }
 
-.btn1 {
+.btn {
     margin-right: 80px;
     color: #6e6e6e;
     width: 40px;
