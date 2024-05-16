@@ -1,100 +1,286 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="View.css" class="css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" />
-    <title>Kon Tum có gì?</title>
-    <script src="home.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-    <div id="wrapper">
-        <div id="header">
-            <a href="home.html" class="logo">Kon Tum có gì?</a>
-            <div id="menu">
-                <div class="item">
-                    <a href=""><span class="material-symbols-outlined">restaurant_menu</span></a>
-                    <div class="dropdown-content">
-                        <a href="đồ ăn.html">Thành phố Kon Tum</a>
-                        <a href="đồ ăn mđ.html">Măng Đen</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <a href=""><span class="material-symbols-outlined">landscape_2</span></a>
-                    <div class="dropdown-content">
-                        <a href="ViewKT.html">Thành phố Kon Tum</a>
-                        <a href="View.html">Măng Đen</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <a href=""><span class="material-symbols-outlined">emoji_food_beverage</span></a>
-                    <div class="dropdown-content">
-                        <a href="drink.html">Thành phố Kon Tum</a>
-                        <a href="drinkMD.html">Măng Đen</a>
-                    </div>
-                </div>
-            </div>
-            <div id="actions">
-                <form id="searchForm">
-                    <input id="searchInput" class="input" type="text" placeholder="Search" />
-                    <button id="searchButton" class="btn1" type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    <div id="suggestions" class="suggestions"></div>
-                </form>
-            </div>
-        </div>
-    
-    <h3>Đi đâu khi tới Măng Đen?</h3>
-    <div class="short-para">
-        <p> Dưới đây là một số địa điểm check in nổi tiếng tại Măng Đen. 
-        </p>
-    </div>
-    
-    <div id="Location">
-        <div class="Quan">
-            <h2>Rừng Thông</h2>
-            <p><a href="#">Ngoại ô</a></p>
-            <video autoplay muted loop id="PineforestMangDen" src="Rừng thông Măng Đen.mp4" type="video/mp4"></video>
-            <br>
-            <a href="Pineforest.html" ><button class="btn">Đọc tiếp</button></a>
-        </div>
-        <div class="Quan">
-            <h2>Hồ Đắk Ke</h2>
-            <p><a href="#">Ngoại ô</a></p>
-            <img src="HDK.jpg" alt="Hồ Đắck Ke">
-            <br>
-            <a href="HDK.html"><button class="btn">Đọc tiếp</button></a>
-        </div>
-        <div class="Quan">
-            <h2>Thác Pa Sỹ</h2>
-            <p><a href="#">Ngoại ô</a></p>
-            <img src="Thác PA SỸ.jpg" alt="Kitachi">
-            <br>
-            <a href="ThacPaSy.html" ><button class="btn">Đọc tiếp</button></a>
-        </div>
-    </div>
-    <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"/>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
 
-    <div id="footer">
-        <div class="box">
-            <a href="home.html" class="logo1"> Kon Tum có gì?</a>
-        </div>
-        <div class="box2">
-            <h4>LIÊN HỆ</h4>
-            <ul class="quick-menu">
-                <div class="item">
-                    <a href=""><i class="fa-solid fa-envelope"></i> Email: kontumcogi@gmail.com</a>
-                </div>
-        </div>
-    </div>
-</div>
+#wrapper {
+    width: 100%;
+    
+    position: relative;
+}
 
-</body>
-</html>
+#header {
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    border-bottom: 0.1px solid rgb(239, 237, 237);
+}
+
+.logo {
+    color: #6e6e6e;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+}
+
+#menu .item {
+    margin: 0 25px;
+}
+
+#menu .item a {
+    color: #6e6e6e;
+    background: rgba(255, 255, 255, 0.466);
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 12px 12px 5px 12px;
+    width: 80px;
+    height: auto;
+    font-style: italic;
+    transition: width 0.3s ease;
+}
+
+#menu .item a:hover {
+    background: rgb(63, 63, 63);
+    transition: 1s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.item:hover .dropdown-content {
+    display: block;
+}
+
+#actions {
+    display: flex;
+}
+
+.input {
+    color: #6e6e6e;
+    background: rgba(255, 255, 255, 0.466);
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 16px 22px;
+    width: 90px;
+    transition: width 0.3s ease;
+
+}
+
+.input::placeholder {
+    color: #6e6e6e;
+}
+
+.btn {
+    margin-left: 0;
+    color: #6e6e6e;
+    width: 80px;
+    padding: 13px 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    background: rgba(255, 255, 255, 0.466);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    left: 0;
+}
+.btn1 {
+    margin-left: 22px;
+    color: #6e6e6e;
+    width: 35px;
+    padding: 13px 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    background: rgba(255, 255, 255, 0.466);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+}
+.btn:hover, .btn1:hover {
+    background: rgb(63, 63, 63);
+    transition: 1s;
+}
+#actions {
+    position: relative;
+    display: flex;
+}
+
+#suggestions {
+    color: gray;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background: #f0f0f0;
+}
+#banner {
+    max-width: 100%;
+    height: auto;
+    margin-top: 6px;
+    display: flex;
+    padding: 0px 133px;
+    position: relative;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-top: 50px;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+}
+
+h3::after {
+    background-color: rgb(239, 237, 237);
+    bottom: -100px;
+    content: "";
+    text-align: center;
+    display: block;
+    height: 0.1px;
+    margin-left: 29%;
+    width: 580px;
+    position: absolute;
+}
+
+.short-para p {
+    position: absolute;
+    display: block;
+    margin-left: 30%;
+    max-width: 590px;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+#Location{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.Quan {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 360px;
+}
+
+.Quan h2 {
+    font-family: cursive;
+}
+
+.Quan p {
+    font-size: 16px;
+    margin-left: -10px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    text-decoration: 1px underline gray dotted;
+    padding: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -1.7px;
+}
+
+.Quan a {
+    color: gray;
+    text-decoration: none;
+}
+
+.Quan video {
+    height: 420px;
+    width: 580px;
+    border-radius: 30px 30px 30px 30px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+.Quan img {
+    height: 420px;
+    width: 580px;
+    border-radius: 30px 30px 30px 30px;
+}
+#footer {
+    flex-shrink: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.79);
+    padding-top: 65px;
+    padding-bottom: 20px; /* Thêm padding-bottom để đảm bảo nội dung không bị cắt */
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; /* Đảm bảo các phần tử con không bị tràn ra ngoài */
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: flex-start; /* Căn các phần tử con lên phía trên */
+    box-sizing: border-box;
+}
+
+#footer .box, #footer .box2 {
+    flex: 1 1 200px; /* Đảm bảo các box có chiều rộng tối thiểu và có thể co giãn */
+    padding: 10px; /* Thêm padding cho mỗi box để có khoảng cách nội dung */
+}
+
+#footer .box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa nội dung bên trong box2 */
+    position: static; /* Xóa position absolute để tránh các vấn đề hiển thị khi zoom */
+    padding-left: 0; /* Đặt lại padding để tránh đẩy nội dung ra ngoài */
+    margin-top: 0; /* Đặt lại margin-top */
+}
+
+#footer .box2 .quick-menu, .item a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0; /* Thêm khoảng cách giữa các mục menu */
+}
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 20px 0; /* Thêm khoảng cách trên và dưới cho h4 */
+    font-size: 30px;
+    text-align: center; /* Căn giữa văn bản */
+}
+
+.logo1 {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(185, 185, 185, 0.705);
+    display: inline-block; /* Đảm bảo logo là inline-block để không bị cắt */
+    margin: 10px 50px; /* Thêm khoảng cách trên và dưới cho logo */
+}
