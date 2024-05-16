@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poetsen+One&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -197,7 +197,7 @@ h3::after {
 }
 
 .Quan h2 {
-    font-family: Poetsen One;
+    font-family: Oswald;
 }
 
 .Quan p {
