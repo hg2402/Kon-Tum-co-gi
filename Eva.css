@@ -169,14 +169,16 @@ body {
 
 .suggestion-item {
     padding: 10px;
-    cursor: poin
+    cursor: pointer;
+}
+
 .suggestion-item:hover {
     background: #f0f0f0;
 }
 #banner {
     width: 100%;
     height: 550px;
-    background-image:linear-gradient(45deg, rgba(25, 26, 25, 0.7) 80%,rgba(57, 56, 56, 0.9)),  url('BackgroundEva.png');
+    background-image:linear-gradient(45deg, rgba(25, 26, 25, 0.7) 80%,rgba(57, 56, 56, 0.9)),  url('BackgroundEva.jpg');
     background-size: cover;
     position: relative;
     display: flex;
