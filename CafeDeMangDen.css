@@ -169,7 +169,9 @@ body {
 
 .suggestion-item {
     padding: 10px;
-    cursor: poin
+    cursor: pointer;
+}
+
 .suggestion-item:hover {
     background: #f0f0f0;
 }
