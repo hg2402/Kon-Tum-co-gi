@@ -262,6 +262,9 @@ body {
     margin-top: 30px;
     margin-left: 30px;
     float: right;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
 }
 
 #ViewofCf {
@@ -285,6 +288,9 @@ body {
      /* Duy trì tỉ lệ ảnh */
     object-fit: cover; /* Đảm bảo ảnh luôn được bao phủ toàn bộ khung chứa */
     margin: 10px; /* Thêm khoảng cách giữa các ảnh */
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
 }
 
 
