@@ -171,7 +171,7 @@ h3::after {
     text-align: center;
     display: block;
     height: 0.1px;
-    margin-left: 28%;
+    margin-left: 29%;
     width: 580px;
     position: absolute;
 }
@@ -219,6 +219,9 @@ h3::after {
     height: 420px;
     width: 580px;
     border-radius: 30px 30px 30px 30px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
 }
 .Quan img {
     height: 420px;
