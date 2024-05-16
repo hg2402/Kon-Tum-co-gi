@@ -190,6 +190,7 @@
     position: absolute;
     top:50%;
     left:50%;
+    width: 70%;
     font-size: 12vh;
     font-family: Lobster;
     transform: translateZ(10px);
