@@ -20,124 +20,12 @@ html, body {
     padding: 0;
     height: 100%;
     display: flex;
-    flex-direction: column;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-#wrapper {
-    flex: 1 0 auto;
-    padding-top: 10px;
-    max-width: 100%;
-    min-width: 100%;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-    overflow: hidden;
-    display: block;
-    border-bottom-color: black;
-    border-bottom-width: 0.7;
-}
-
-#header {
-    width: 100%;
-    padding: 0px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #6e6e6e;
-    margin-bottom: 50px;
-    position: relative;
-    margin-top: 10px;
-}
-
-body {
-    background-color: #dddcdc;
-    height: fit-content;
-}
-
-.logo {
-    color: #6e6e6e;
-    background: rgba(255, 255, 255, 0.466);
-    font-size: 20px;
-    padding: 10px 10px;
-    cursor: pointer;
-    font-style: italic;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: 100px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-#menu {
-    list-style: none;
-    display: flex;
-}
-
-#menu .item {
-    margin-right: 25px;
-}
-
-#menu .item a {
-    color: #6e6e6e;
-    background: rgba(255, 255, 255, 0.466);
-    border-radius: 25px;
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 12px 12px 5px 12px;
-    margin-bottom: 50px;
-    width: 80px;
-    height: auto;
-    font-style: italic;
-    transition: width 0.3s ease;
-}
-
-#menu .item a:hover {
+    flexbtn1:hover {
     background: rgb(63, 63, 63);
     transition: 1s;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    width: 500px;
-    top: 50px;
-}
-
-.item:hover .dropdown-content {
-    display: block;
-}
-
-#actions {
-    display: flex;
-}
-
-.input {
-    color: #6e6e6e;
-    background: rgba(255, 255, 255, 0.466);
-    border-radius: 100px;
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 16px 22px;
-    width: 90px;
-    transition: width 0.3s ease;
-    margin-right:-22px;
-}
-
-.input::placeholder {
-    color: #6e6e6e;
-}
-
-.btn:hover {
-    background: rgb(63, 63, 63);
-    transition: 1s;
-}
-
-.btn {
+.btn1 {
     margin-right: 80px;
     color: #6e6e6e;
     width: 40px;
