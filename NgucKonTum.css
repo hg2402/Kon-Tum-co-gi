@@ -127,11 +127,11 @@
 .input::placeholder {
     color: #6e6e6e;
 }
-.btn:hover{
+.btn1:hover{
     background: rgb(63, 63, 63);
     transition: 1s;
 }
-.btn {
+.btn1 {
     margin-right: 80px;
     color: #6e6e6e;
     width: 40px;
