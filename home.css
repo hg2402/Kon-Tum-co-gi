@@ -79,35 +79,20 @@
     border-radius: 100px;
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 5px 10px;
-    width: 68px;
+    padding: 16px 22px;
+    width: 90px;
     transition: width 0.3s ease;
 }
 
 .input::placeholder {
     color: rgb(255, 255, 255);
 }
-button{
-    color: #ddd;
-}
-.btn {
-    margin-left: 22px;
-    color: rgb(255, 255, 255);
-    width: 40px;
-    padding: 13px 10px;
-    cursor: pointer;
-    border-radius: 100px;
-    border: none;
-    background: rgba(255, 255, 255, 0.938);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    top: 0;
-    left: 0;
-}
+
 .btn1 {
     margin-left: 22px;
     color: rgb(255, 255, 255);
     width: 40px;
-    padding: 8px 12px;
+    padding: 13px 10px;
     cursor: pointer;
     border-radius: 100px;
     border: none;
@@ -116,7 +101,8 @@ button{
     top: 0;
     left: 0;
 }
-.btn:hover, .btn1:hover {
+
+.btn1:hover {
     background: rgb(63, 63, 63);
     transition: 1s;
 }
@@ -193,7 +179,6 @@ button{
 }
 
 #footer .box2 .quick-menu, .item a {
-    padding-left: 20px;
     color: #fff;
     text-decoration: none;
 }
