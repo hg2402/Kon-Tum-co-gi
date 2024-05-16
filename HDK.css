@@ -16,7 +16,6 @@
     box-sizing: border-box;
     cursor: pointer;
 }
-
   #wrapper {
     background-color: #dddcdc;
     position: relative; /* Change to relative positioning */
@@ -123,7 +122,7 @@
     padding: 16px 22px;
     width: 90px;
     transition: width 0.3s ease;
-    margin-right: 22px;
+  
 }
 .input::placeholder {
     color: #6e6e6e;
@@ -133,19 +132,6 @@
     transition: 1s;
 }
 .btn {
-    margin-right: 80px;
-    color: #6e6e6e;
-    width: 40px;
-    padding: 13px 10px;
-    cursor: pointer;
-    border-radius: 100px;
-    border: none;
-    background: rgba(255, 255, 255, 0.466);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    top: 0;
-    left: 0;
-}
-.btn1 {
     margin-right: 80px;
     color: #6e6e6e;
     width: 40px;
@@ -197,7 +183,6 @@
     background-image: linear-gradient(60deg, rgba(16, 18, 17, 0.7) 100%,rgba(40, 39, 39, 1)), url('BackgroundHDK.jpg');
     background-size: cover;
     background-position: center;
-    z-index: -1;
 }
 
 .content{
@@ -205,6 +190,7 @@
     position: absolute;
     top:50%;
     left:50%;
+    width: 70%;
     font-size: 12vh;
     font-family: Lobster;
     transform: translateZ(10px);
@@ -285,9 +271,7 @@
     width: 60%;
     height: 100%;
 }
-#view {
-    padding-bottom: 80px;
-}
+
 .title{
     color: #242323;
     text-align: center;
@@ -307,6 +291,7 @@
     float:right;
     width: 45%;
     height: 50vh;
+    margin-top:60px;
     color: #d4d4d4;
     display:block;
     margin-right: 2%;
@@ -357,6 +342,7 @@
     width: 45%;
     height: 50vh;
     color: #d4d4d4;
+    margin-top:60px;
     display:block;
     margin-left: 2%;
 }
