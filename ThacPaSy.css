@@ -126,7 +126,6 @@ body {
     padding: 16px 22px;
     width: 90px;
     transition: width 0.3s ease;
-    margin-right: 22px;
 }
 
 .input::placeholder {
