@@ -120,8 +120,8 @@
     border-radius: 100px;
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 5px 10px;
-    width: 68px;
+    padding: 16px 22px;
+    width: 90px;
     transition: width 0.3s ease;
     margin-right: 22px;
 }
