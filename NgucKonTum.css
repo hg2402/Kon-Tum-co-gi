@@ -119,10 +119,10 @@
     border-radius: 100px;
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 5px 10px;
-    width: 68px;
+    padding: 16px 22px;
+    width: 90px;
     transition: width 0.3s ease;
-    margin-right: 22px;
+  
 }
 .input::placeholder {
     color: #6e6e6e;
@@ -131,7 +131,7 @@
     background: rgb(63, 63, 63);
     transition: 1s;
 }
-.btn1 {
+.btn {
     margin-right: 80px;
     color: #6e6e6e;
     width: 40px;
