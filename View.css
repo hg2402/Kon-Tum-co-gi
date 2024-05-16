@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -196,7 +197,7 @@ h3::after {
 }
 
 .Quan h2 {
-    font-family: cursive;
+    font-family: Poetsen One;
 }
 
 .Quan p {
